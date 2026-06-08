@@ -329,11 +329,53 @@ Use for:
 
 Each Thmanyah family has five weights:
 
-- Light
-- Regular
-- Medium
-- Bold
-- Black
+- Light `300`
+- Regular `400`
+- Medium `500`
+- Bold `700`
+- Black `900`
+
+## Automatic Optical Typography Scale
+
+AITHNEEN uses a locked five-step typography scale. Designers and developers choose
+the text size step only. Each step automatically determines the Thmanyah family,
+weight, and intended role.
+
+| Computed size | Automatic family | Automatic weight | Intended role |
+|---|---|---:|---|
+| Below `16px` | Thmanyah Sans | Medium `500` | labels, metadata, captions, compact UI |
+| `16px–19px` | Thmanyah Serif Text | Regular `400` | paragraphs and long reading |
+| `20px–31px` | Thmanyah Serif Display | Medium `500` | introductions and small headings |
+| `32px–55px` | Thmanyah Serif Display | Bold `700` | section and project headings |
+| `56px` and above | Thmanyah Serif Display | Black `900` | hero and major editorial statements |
+
+The two principal Arabic serif forms are treated optically:
+
+- Thmanyah Serif Text is the calm reading form used below `20px`.
+- Thmanyah Serif Display is the more extended expressive form used from `20px`.
+- The Display form becomes fully emphatic with Black `900` from `56px`.
+
+Thmanyah Sans remains the automatic choice below `16px` because compact interface
+text needs stronger clarity than a light serif form.
+
+### Light Weight Rule
+
+Light `300` is available in all three families, but it is not part of the automatic
+scale. Never assign Light automatically to very small text. It may be used only as
+an intentional exception for large, quiet editorial statements after readability
+has been checked.
+
+### Size-Only Selection Rule
+
+Do not choose font family and weight independently during ordinary implementation.
+Choose one locked size token and allow that token to supply all three properties:
+
+- `font-size`
+- `font-family`
+- `font-weight`
+
+Arbitrary sizes outside the locked steps should be rare. UI controls remain
+Thmanyah Sans regardless of their size.
 
 ## Code Exception
 
@@ -354,7 +396,7 @@ Recommended stack:
 
 ## Typography Principle
 
-> One type family. Three coordinated forms. Five weights. Use the right tool for each job.
+> Choose the size. The system chooses the form and weight.
 
 ---
 
@@ -722,8 +764,40 @@ Avoid outlining every item.
     Consolas,
     "Liberation Mono",
     monospace;
+
+  /* Choose a size token; its family and weight are locked with it. */
+  --aithneen-type-xs-size: 0.75rem;
+  --aithneen-type-body-size: 1.125rem;
+  --aithneen-type-lead-size: 1.5rem;
+  --aithneen-type-heading-size: 2.5rem;
+  --aithneen-type-hero-size: clamp(3.5rem, 9vw, 7.5rem);
+}
+
+.type-xs {
+  font: 500 var(--aithneen-type-xs-size) / 1.5 var(--aithneen-font-ui);
+}
+
+.type-body {
+  font: 400 var(--aithneen-type-body-size) / 1.7 var(--aithneen-font-body);
+}
+
+.type-lead {
+  font: 500 var(--aithneen-type-lead-size) / 1.4 var(--aithneen-font-display);
+}
+
+.type-heading {
+  font: 700 var(--aithneen-type-heading-size) / 1.15 var(--aithneen-font-display);
+}
+
+.type-hero {
+  font: 900 var(--aithneen-type-hero-size) / 1 var(--aithneen-font-display);
 }
 ```
+
+CSS cannot react to an arbitrary element's computed `font-size` by changing its
+family and weight. Therefore, the automatic system is implemented through the
+five locked size tokens above. Selecting a token is selecting the complete
+typographic treatment.
 
 ## Hosting
 
@@ -766,6 +840,13 @@ Recommended approach:
 - Display: Thmanyah Serif Display
 - Body: Thmanyah Serif Text
 - UI: Thmanyah Sans
+- Select typography by locked size token, not by separate family and weight choices
+- Below `16px`: Sans Medium
+- `16px–19px`: Serif Text Regular
+- `20px–31px`: Serif Display Medium
+- `32px–55px`: Serif Display Bold
+- `56px+`: Serif Display Black
+- Light `300`: intentional large-text exception only
 - Code only: browser-system monospace
 
 ## Logo

@@ -241,13 +241,19 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
 }
 </style>
 <style>
+@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Light.woff2") format("woff2");font-weight:300;font-display:swap}
 @font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
 @font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Black.woff2") format("woff2");font-weight:900;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Light.woff2") format("woff2");font-weight:300;font-display:swap}
 @font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
 @font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Black.woff2") format("woff2");font-weight:900;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Light.woff2") format("woff2");font-weight:300;font-display:swap}
 @font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
 @font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
 @font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Black.woff2") format("woff2");font-weight:900;font-display:swap}
 :root{
@@ -258,6 +264,8 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
   --body:"Thmanyah Serif Text",Georgia,serif;
   --ui:"Thmanyah Sans",system-ui,sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+  --type-xs-size:.75rem;--type-body-size:1.125rem;--type-lead-size:1.5rem;
+  --type-heading-size:2.5rem;--type-hero-size:clamp(3.5rem,9vw,7.5rem);
   --content-max:1280px;--copy-max:68ch;
 }
 html[data-theme="light"]{--surface:var(--bg-light);--text:var(--primary-light);--muted:var(--secondary-light);--line:rgba(30,40,51,.2);--line-soft:rgba(30,40,51,.1);--portrait-border:rgba(44,184,154,.48)}
@@ -272,11 +280,11 @@ body::before{opacity:1;background-image:radial-gradient(circle at 8% 8%,color-mi
 button{background:color-mix(in srgb,var(--surface) 84%,transparent);border-color:var(--line);font-size:.78rem;font-weight:500}
 button:hover,button:focus-visible{background:color-mix(in srgb,var(--teal) 12%,var(--surface));transform:translateY(-1px)}
 h1,h2,h3,html[data-lang="ar"] h1,html[data-lang="ar"] h2,html[data-lang="ar"] h3{font-family:var(--display);letter-spacing:0}
-h1{font-size:clamp(3.4rem,9vw,7.5rem);font-weight:700;line-height:.96}
-h2{font-size:clamp(2.45rem,5vw,4.5rem);font-weight:700;line-height:1}
-h3{font-weight:700;line-height:1.2}
+h1{font-size:var(--type-hero-size);font-weight:900;line-height:.96}
+h2{font-size:clamp(2rem,4vw,3.4rem);font-weight:700;line-height:1}
+h3{font-size:clamp(1.25rem,2vw,1.9375rem);font-weight:500;line-height:1.2}
 html[data-lang="ar"] h1,html[data-lang="ar"] h2,html[data-lang="ar"] h3{line-height:1.3}
-.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.12em}.hero-copy{font-size:clamp(1.08rem,2vw,1.35rem)}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.12em}.hero-copy{font-size:clamp(1.08rem,1.5vw,1.1875rem)}
 .hero{position:relative;border-bottom:0;min-height:calc(100vh - 80px);padding-block:var(--space-7)}
 .hero::after,.section::after{content:"";position:absolute;inset-inline:0;inset-block-end:0;height:1px;background:linear-gradient(to right,transparent,var(--line),transparent)}
 .section{position:relative;border-bottom:0;padding-block:var(--space-7)}
@@ -304,7 +312,14 @@ code{font-family:var(--mono)}
 .surface-sheet:nth-child(2){background:color-mix(in srgb,var(--surface) 91%,var(--violet) 4%)}
 .mark-row{gap:var(--space-2)}.mark-row span{font-family:var(--ui)}
 .type-sample{padding-block:var(--space-4)}.type-role{font-weight:700;letter-spacing:.08em}
-.type-display{font-family:var(--body)!important}.type-display.heading-en-light,.type-display.heading-en-dark,.type-display.heading-ar-light,.type-display.heading-ar-dark{font-family:var(--display)!important;font-weight:700}.type-display.ui-sample{font-family:var(--ui)!important;font-weight:500}.type-display.mono{font-family:var(--mono)!important}
+.type-display{margin-block:var(--space-2) var(--space-1)}
+.type-auto-xs{font:500 var(--type-xs-size)/1.5 var(--ui)}
+.type-auto-body{font:400 var(--type-body-size)/1.7 var(--body)}
+.type-auto-lead{font:500 var(--type-lead-size)/1.4 var(--display)}
+.type-auto-heading{font:700 var(--type-heading-size)/1.15 var(--display)}
+.type-auto-hero{font:900 clamp(3.5rem,7vw,5.5rem)/1.05 var(--display)}
+.type-light-exception{font:300 var(--type-heading-size)/1.2 var(--display)}
+.type-display.mono{font-family:var(--mono)!important}
 .logo-figure{border-color:var(--line-soft)}.logo-figure.light-preview .logo-stage{background:var(--bg-light)}.logo-figure.dark-preview .logo-stage{background:var(--bg-dark)}
 .icon-demo,.specialist-icon{border-color:var(--line-soft)}.icon-demo iconify-icon{color:var(--teal)}
 .radius-box{border-width:1px;border-color:var(--line)}.open-item{border-width:1px;border-color:var(--line-soft);padding-block:var(--space-4)}
@@ -566,29 +581,30 @@ code{font-family:var(--mono)}
     <div>
       <p class="eyebrow en">04 / TYPOGRAPHY</p>
       <p class="eyebrow ar">٠٤ / الخطوط</p>
-      <h2 class="en">One family. Three coordinated forms.</h2>
-      <h2 class="ar">عائلة واحدة. ثلاثة أشكال منسجمة.</h2>
+      <h2 class="en">Choose the size. The system chooses the type.</h2>
+      <h2 class="ar">اختر الحجم. والنظام يختار الخط.</h2>
     </div>
-    <p class="en">Thmanyah gives Arabic and English one coherent voice. Display carries major moments, Text supports long reading, and Sans handles compact interface language.</p>
-    <p class="ar">يمنح خط ثمانية العربية والإنجليزية صوتًا واحدًا متماسكًا. يحمل خط العرض اللحظات الكبرى، ويدعم خط النص القراءة الطويلة، ويتولى الخط غير المزخرف لغة الواجهة المختصرة.</p>
+    <p class="en">Five locked size steps automatically choose the correct Thmanyah form and weight. Ordinary implementation requires one decision only: the intended text size.</p>
+    <p class="ar">تختار خمس درجات حجمية معتمدة شكل خط ثمانية ووزنه تلقائيًا. لا يحتاج التنفيذ العادي إلا إلى قرار واحد: حجم النص المقصود.</p>
   </div>
   <div class="annotation annotation-teal">
     <strong class="en">Typography lock:</strong><strong class="ar">الخطوط المعتمدة:</strong>
-    <span class="en"> Use Thmanyah Serif Display for major headings, Thmanyah Serif Text for reading, and Thmanyah Sans for navigation, labels, buttons, and metadata.</span>
-    <span class="ar"> استخدم ثمانية سيرف للعرض في العناوين الكبرى، وثمانية سيرف للنص في القراءة، وثمانية سانس للتنقل والتسميات والأزرار والبيانات الوصفية.</span>
+    <span class="en"> Below 16px: Sans Medium. 16–19px: Serif Text Regular. 20–31px: Display Medium. 32–55px: Display Bold. 56px and above: Display Black.</span>
+    <span class="ar"> تحت ١٦ بكسل: سانس متوسط. من ١٦ إلى ١٩: سيرف النص عادي. من ٢٠ إلى ٣١: سيرف العرض متوسط. من ٣٢ إلى ٥٥: سيرف العرض عريض. من ٥٦ فأكثر: سيرف العرض أسود.</span>
   </div>
   <div class="typography-grid">
-    <div class="type-sample"><span class="type-role en">SERIF DISPLAY / MAJOR ARABIC</span><span class="type-role ar">سيرف العرض / عنوان عربي كبير</span><div class="type-display heading-ar-light">ابتكار نافع</div></div>
-    <div class="type-sample"><span class="type-role en">SERIF DISPLAY / MAJOR ENGLISH</span><span class="type-role ar">سيرف العرض / عنوان إنجليزي كبير</span><div class="type-display heading-en-light">Useful Invention</div></div>
-    <div class="type-sample"><span class="type-role en">SERIF TEXT / ARABIC READING</span><span class="type-role ar">سيرف النص / قراءة عربية</span><div class="type-display body-ar">الفكرة المختلفة تحتاج إلى يد تعرف كيف تبني.</div></div>
-    <div class="type-sample"><span class="type-role en">SERIF TEXT / ENGLISH READING</span><span class="type-role ar">سيرف النص / قراءة إنجليزية</span><div class="type-display body-en">Useful invention begins with patient observation.</div></div>
-    <div class="type-sample"><span class="type-role en">THMANYAH SANS / INTERFACE</span><span class="type-role ar">ثمانية سانس / الواجهة</span><div class="type-display ui-sample">AITHNEEN / Research / Systems / Build</div></div>
+    <div class="type-sample"><span class="type-role en">BELOW 16PX / SANS MEDIUM 500</span><span class="type-role ar">تحت ١٦ بكسل / سانس متوسط ٥٠٠</span><div class="type-display type-auto-xs">AITHNEEN / بحث / نظام نشط / ACTIVE SYSTEM</div></div>
+    <div class="type-sample"><span class="type-role en">16–19PX / SERIF TEXT REGULAR 400</span><span class="type-role ar">١٦–١٩ بكسل / سيرف النص عادي ٤٠٠</span><div class="type-display type-auto-body">الفكرة المختلفة تحتاج إلى يد تعرف كيف تبني. Useful invention begins with patient observation.</div></div>
+    <div class="type-sample"><span class="type-role en">20–31PX / DISPLAY MEDIUM 500</span><span class="type-role ar">٢٠–٣١ بكسل / سيرف العرض متوسط ٥٠٠</span><div class="type-display type-auto-lead">من البحث إلى نظام نافع.</div></div>
+    <div class="type-sample"><span class="type-role en">32–55PX / DISPLAY BOLD 700</span><span class="type-role ar">٣٢–٥٥ بكسل / سيرف العرض عريض ٧٠٠</span><div class="type-display type-auto-heading">Builder and inventor.</div></div>
+    <div class="type-sample"><span class="type-role en">56PX+ / DISPLAY BLACK 900</span><span class="type-role ar">٥٦ بكسل فأكثر / سيرف العرض أسود ٩٠٠</span><div class="type-display type-auto-hero">ابتكار نافع</div></div>
+    <div class="type-sample"><span class="type-role en">LIGHT 300 / LARGE MANUAL EXCEPTION</span><span class="type-role ar">خفيف ٣٠٠ / استثناء يدوي كبير</span><div class="type-display type-light-exception">A quiet editorial moment.</div></div>
     <div class="type-sample"><span class="type-role en">SYSTEM MONOSPACE / CODE ONLY</span><span class="type-role ar">خط النظام الأحادي / للكود فقط</span><div class="type-display mono">SYSTEM: useful-invention / STATUS: evolving</div></div>
   </div>
   <div class="annotation">
     <strong class="en">Font note:</strong><strong class="ar">ملاحظة عن الخط:</strong>
-    <span class="en"> The Thmanyah WOFF2 files are self-hosted and used across both languages and themes. System monospace is the only exception, reserved for genuine code-like content.</span>
-    <span class="ar"> تُستضاف ملفات ثمانية بصيغة WOFF2 محليًا وتُستخدم في اللغتين والوضعين. الاستثناء الوحيد هو خط النظام الأحادي المخصص للمحتوى البرمجي الحقيقي.</span>
+    <span class="en"> Light 300 remains available only as a deliberate large-text exception. It is never selected automatically for small text. System monospace remains reserved for genuine code-like content.</span>
+    <span class="ar"> يبقى الوزن الخفيف ٣٠٠ استثناءً مقصودًا للنصوص الكبيرة فقط، ولا يختاره النظام تلقائيًا للنصوص الصغيرة. ويبقى خط النظام الأحادي مخصصًا للمحتوى البرمجي الحقيقي.</span>
   </div>
 </section>
 
