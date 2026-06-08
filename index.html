@@ -3,25 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aithneen Visual Identity Book V2</title>
-<meta name="description" content="Complete bilingual visual identity book for Aithneen.">
+<title>AITHNEEN Visual Identity Book V5</title>
+<meta name="description" content="The bilingual V5 visual identity system for AITHNEEN.">
 <link id="favicon" rel="icon" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Bilbo+Swash+Caps&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Kalam:wght@300;400;700&family=Katibeh&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link rel="preload" href="./fonts/thmanyahserifdisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/thmanyahseriftext-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/thmanyahsans-Medium.woff2" as="font" type="font/woff2" crossorigin>
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 <style>
-@font-face {
-  font-family: "Amoshref Thulth Local";
-  src:
-    url("./amoshref-thulth.ttf") format("truetype"),
-    local("Amoshref Thulth"),
-    local("Amoshref-Thulth"),
-    local("AmoShref Thulth");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
 :root {
   --paper:#EEE6D7; --board:#141716;
   --mask-solid:#000;
@@ -30,14 +19,14 @@
   --violet-light:#7557A3; --teal-light:#149C82;
   --violet-dark:#7C5CE6; --teal-dark:#2CB89A;
   --deep-teal:#0D6257; --mid-teal:#3F8C7A; --faded-teal:#7FAFA6; --chalk-line:#C9C2B6;
-  --body-en:"EB Garamond", Georgia, serif;
-  --body-ar:"Amiri", "Times New Roman", serif;
-  --heading-en-light:"Bilbo Swash Caps", cursive;
-  --heading-en-dark:"Kalam", cursive;
-  --section-heading-en:"EB Garamond", Georgia, serif;
-  --heading-ar-light:"Amoshref Thulth Local", "Katibeh", "Aref Ruqaa", serif;
-  --heading-ar-dark:"Amoshref Thulth Local", "Katibeh", "Aref Ruqaa", serif;
-  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  --body-en:"Thmanyah Serif Text", Georgia, serif;
+  --body-ar:"Thmanyah Serif Text", Georgia, serif;
+  --heading-en-light:"Thmanyah Serif Display", Georgia, serif;
+  --heading-en-dark:"Thmanyah Serif Display", Georgia, serif;
+  --section-heading-en:"Thmanyah Serif Display", Georgia, serif;
+  --heading-ar-light:"Thmanyah Serif Display", Georgia, serif;
+  --heading-ar-dark:"Thmanyah Serif Display", Georgia, serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
   --r-small:10px; --r-note:18px; --r-large:24px; --pill:999px;
   --space-1:.5rem; --space-2:.75rem; --space-3:1rem; --space-4:1.5rem;
   --space-5:2rem; --space-6:3rem; --space-7:4.5rem; --space-8:6rem;
@@ -251,6 +240,77 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
   *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
 }
 </style>
+<style>
+@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Black.woff2") format("woff2");font-weight:900;font-display:swap}
+:root{
+  --bg-light:#F1F4F8;--primary-light:#1E2833;--secondary-light:#5F6B78;
+  --bg-dark:#101319;--primary-dark:#E8EDF2;--secondary-dark:#A7B3BE;
+  --violet:#7C5CE6;--teal:#2CB89A;
+  --display:"Thmanyah Serif Display",Georgia,serif;
+  --body:"Thmanyah Serif Text",Georgia,serif;
+  --ui:"Thmanyah Sans",system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+  --content-max:1280px;--copy-max:68ch;
+}
+html[data-theme="light"]{--surface:var(--bg-light);--text:var(--primary-light);--muted:var(--secondary-light);--line:rgba(30,40,51,.2);--line-soft:rgba(30,40,51,.1);--portrait-border:rgba(44,184,154,.48)}
+html[data-theme="dark"]{--surface:var(--bg-dark);--text:var(--primary-dark);--muted:var(--secondary-dark);--line:rgba(232,237,242,.2);--line-soft:rgba(232,237,242,.1);--portrait-border:rgba(44,184,154,.5)}
+body,html[data-lang="ar"] body{font-family:var(--body);font-size:18px;line-height:1.7;letter-spacing:0;text-align:start}
+body::before{opacity:1;background-image:radial-gradient(circle at 8% 8%,color-mix(in srgb,var(--violet) 12%,transparent),transparent 28rem),radial-gradient(circle at 92% 20%,color-mix(in srgb,var(--teal) 10%,transparent),transparent 32rem);background-size:auto;mask-image:none}
+.shell{padding-inline:var(--space-3)}
+.topbar{border-bottom:0;padding-block:var(--space-3);background:color-mix(in srgb,var(--surface) 90%,transparent)}
+.topbar::after{content:"";position:absolute;inset-inline:0;inset-block-end:0;height:1px;background:linear-gradient(to right,var(--violet),var(--teal));opacity:.55}
+.brand-name,.brand-sub,.eyebrow,button,.type-role,.chain-step .step-no,.icon-demo small,.specialist-icon small,.footer{font-family:var(--ui)}
+.brand-name{font-weight:700;letter-spacing:.16em}.brand-sub{letter-spacing:.08em}
+button{background:color-mix(in srgb,var(--surface) 84%,transparent);border-color:var(--line);font-size:.78rem;font-weight:500}
+button:hover,button:focus-visible{background:color-mix(in srgb,var(--teal) 12%,var(--surface));transform:translateY(-1px)}
+h1,h2,h3,html[data-lang="ar"] h1,html[data-lang="ar"] h2,html[data-lang="ar"] h3{font-family:var(--display);letter-spacing:0}
+h1{font-size:clamp(3.4rem,9vw,7.5rem);font-weight:700;line-height:.96}
+h2{font-size:clamp(2.45rem,5vw,4.5rem);font-weight:700;line-height:1}
+h3{font-weight:700;line-height:1.2}
+html[data-lang="ar"] h1,html[data-lang="ar"] h2,html[data-lang="ar"] h3{line-height:1.3}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.12em}.hero-copy{font-size:clamp(1.08rem,2vw,1.35rem)}
+.hero{position:relative;border-bottom:0;min-height:calc(100vh - 80px);padding-block:var(--space-7)}
+.hero::after,.section::after{content:"";position:absolute;inset-inline:0;inset-block-end:0;height:1px;background:linear-gradient(to right,transparent,var(--line),transparent)}
+.section{position:relative;border-bottom:0;padding-block:var(--space-7)}
+.section-head{gap:var(--space-4);margin-bottom:var(--space-6)}
+.section-head p{font-size:1.06rem;line-height:1.75}
+.rule{height:2px;margin-block:var(--space-4) var(--space-6)}
+.annotation{background:color-mix(in srgb,var(--surface) 84%,var(--teal) 3%);border-width:1px}
+.numbered article{grid-template-columns:3.5rem 1fr;padding-block:var(--space-4)}
+.numbered article::before{font-family:var(--ui);font-weight:700}
+.swatches{border:0;border-radius:0;gap:1px;background:var(--line-soft)}
+.swatch{background:var(--surface);border:0;padding:var(--space-3);min-height:8rem}
+.swatch:nth-child(n+9){display:none}
+.swatch:nth-child(1) .swatch-color{background:var(--violet)}
+.swatch:nth-child(2) .swatch-color{background:var(--teal)}
+.swatch:nth-child(3) .swatch-color{background:var(--bg-light)}
+.swatch:nth-child(4) .swatch-color{background:var(--primary-light)}
+.swatch:nth-child(5) .swatch-color{background:var(--secondary-light)}
+.swatch:nth-child(6) .swatch-color{background:var(--bg-dark)}
+.swatch:nth-child(7) .swatch-color{background:var(--primary-dark)}
+.swatch:nth-child(8) .swatch-color{background:var(--secondary-dark)}
+code{font-family:var(--mono)}
+.gradient-row{grid-template-columns:1fr}.gradient-row .gradient-sample:first-child{display:none}
+.gradient-dark{background:linear-gradient(to right,var(--violet),var(--teal));color:var(--bg-dark);border:0}
+.surface-sheet{background:color-mix(in srgb,var(--surface) 92%,var(--teal) 3%);color:var(--text);border:1px solid var(--line-soft);min-height:20rem}
+.surface-sheet:nth-child(2){background:color-mix(in srgb,var(--surface) 91%,var(--violet) 4%)}
+.mark-row{gap:var(--space-2)}.mark-row span{font-family:var(--ui)}
+.type-sample{padding-block:var(--space-4)}.type-role{font-weight:700;letter-spacing:.08em}
+.type-display{font-family:var(--body)!important}.type-display.heading-en-light,.type-display.heading-en-dark,.type-display.heading-ar-light,.type-display.heading-ar-dark{font-family:var(--display)!important;font-weight:700}.type-display.ui-sample{font-family:var(--ui)!important;font-weight:500}.type-display.mono{font-family:var(--mono)!important}
+.logo-figure{border-color:var(--line-soft)}.logo-figure.light-preview .logo-stage{background:var(--bg-light)}.logo-figure.dark-preview .logo-stage{background:var(--bg-dark)}
+.icon-demo,.specialist-icon{border-color:var(--line-soft)}.icon-demo iconify-icon{color:var(--teal)}
+.radius-box{border-width:1px;border-color:var(--line)}.open-item{border-width:1px;border-color:var(--line-soft);padding-block:var(--space-4)}
+@media (min-width:768px){.shell{padding-inline:var(--space-5)}.section{padding-block:var(--space-8)}.section-head{grid-template-columns:minmax(0,1.1fr) minmax(20rem,.9fr);gap:var(--space-6)}}
+@media (min-width:1024px){.hero{grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);gap:var(--space-8)}.shell{padding-inline:var(--space-6)}}
+</style>
 </head>
 <body>
 <main class="shell">
@@ -260,8 +320,8 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div>
       <p class="brand-name en">AITHNEEN</p>
       <p class="brand-name ar">AITHNEEN</p>
-      <span class="brand-sub en">VISUAL IDENTITY BOOK / V2</span>
-      <span class="brand-sub ar">كتاب الهوية البصرية / النسخة الأولى</span>
+      <span class="brand-sub en">VISUAL IDENTITY BOOK / V5</span>
+      <span class="brand-sub ar">كتاب الهوية البصرية / النسخة الخامسة</span>
     </div>
   </div>
   <div class="controls">
@@ -317,19 +377,19 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div>
       <p class="eyebrow en">02 / COLOR SYSTEM</p>
       <p class="eyebrow ar">٠٢ / نظام الألوان</p>
-      <h2 class="en">Paper, board, ink, chalk.</h2>
-      <h2 class="ar">ورق وسبورة وحبر وطباشير.</h2>
+      <h2 class="en">One palette. Two digital modes.</h2>
+      <h2 class="ar">لوحة واحدة. وضعان رقميان.</h2>
     </div>
-    <p class="en">The palette is not decorative. It establishes two rooms: paper for light mode and blackboard for dark mode. Violet and teal are the energetic accents moving through both.</p>
-    <p class="ar">ليست الألوان للزينة. إنها تصنع مساحتين: ورقًا للوضع الفاتح وسبورة للوضع الداكن. ويتحرك البنفسجي والأخضر المزرق داخلهما بوصفهما لونَي الطاقة.</p>
+    <p class="en">A clean blue-gray light surface and deep blue-charcoal dark surface carry the same violet and teal accents. Color communicates hierarchy, interaction, and movement.</p>
+    <p class="ar">يحمل السطح الفاتح الأزرق الرمادي والسطح الداكن الأزرق الفحمي اللونين البنفسجي والأخضر المزرق نفسيهما. تعبّر الألوان عن التسلسل والتفاعل والحركة.</p>
   </div>
   <div class="swatches">
     <div class="swatch">
       <div class="swatch-color swatch-violet-light"></div>
       <div>
-        <strong class="en">Light violet</strong>
-        <strong class="ar">البنفسجي الفاتح</strong>
-        <code>#7557A3</code>
+        <strong class="en">Violet accent</strong>
+        <strong class="ar">البنفسجي المميز</strong>
+        <code>#7C5CE6</code>
       </div>
     </div>
     
@@ -337,9 +397,9 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div class="swatch">
       <div class="swatch-color swatch-teal-light"></div>
       <div>
-        <strong class="en">Light teal</strong>
-        <strong class="ar">الأخضر المزرق الفاتح</strong>
-        <code>#149C82</code>
+        <strong class="en">Teal accent</strong>
+        <strong class="ar">الأخضر المزرق المميز</strong>
+        <code>#2CB89A</code>
       </div>
     </div>
     
@@ -347,9 +407,9 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div class="swatch">
       <div class="swatch-color swatch-paper"></div>
       <div>
-        <strong class="en">Paper surface</strong>
-        <strong class="ar">سطح الورق</strong>
-        <code>#EEE6D7</code>
+        <strong class="en">Light background</strong>
+        <strong class="ar">الخلفية الفاتحة</strong>
+        <code>#F1F4F8</code>
       </div>
     </div>
     
@@ -357,9 +417,9 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div class="swatch">
       <div class="swatch-color swatch-ink"></div>
       <div>
-        <strong class="en">Light primary ink</strong>
-        <strong class="ar">الحبر الأساسي الفاتح</strong>
-        <code>#47382D</code>
+        <strong class="en">Light primary text</strong>
+        <strong class="ar">النص الأساسي الفاتح</strong>
+        <code>#1E2833</code>
       </div>
     </div>
     
@@ -369,7 +429,7 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
       <div>
         <strong class="en">Light secondary text</strong>
         <strong class="ar">النص الثانوي الفاتح</strong>
-        <code>#5E625D</code>
+        <code>#5F6B78</code>
       </div>
     </div>
     
@@ -377,9 +437,9 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div class="swatch">
       <div class="swatch-color swatch-violet-dark"></div>
       <div>
-        <strong class="en">Dark violet</strong>
-        <strong class="ar">البنفسجي الداكن</strong>
-        <code>#7C5CE6</code>
+        <strong class="en">Dark background</strong>
+        <strong class="ar">الخلفية الداكنة</strong>
+        <code>#101319</code>
       </div>
     </div>
     
@@ -387,9 +447,9 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div class="swatch">
       <div class="swatch-color swatch-teal-dark"></div>
       <div>
-        <strong class="en">Dark teal</strong>
-        <strong class="ar">الأخضر المزرق الداكن</strong>
-        <code>#2CB89A</code>
+        <strong class="en">Dark primary text</strong>
+        <strong class="ar">النص الأساسي الداكن</strong>
+        <code>#E8EDF2</code>
       </div>
     </div>
     
@@ -397,9 +457,9 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div class="swatch">
       <div class="swatch-color swatch-board"></div>
       <div>
-        <strong class="en">Blackboard surface</strong>
-        <strong class="ar">سطح السبورة</strong>
-        <code>#141716</code>
+        <strong class="en">Dark secondary text</strong>
+        <strong class="ar">النص الثانوي الداكن</strong>
+        <code>#A7B3BE</code>
       </div>
     </div>
     
@@ -465,7 +525,7 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     </div>
   <div class="gradient-row">
     <div class="gradient-sample gradient-light"><strong class="en">Light gradient</strong><strong class="ar">تدرج الوضع الفاتح</strong><code>linear-gradient(to right, #7557A3, #149C82)</code></div>
-    <div class="gradient-sample gradient-dark"><strong class="en">Dark gradient</strong><strong class="ar">تدرج الوضع الداكن</strong><code>linear-gradient(to right, #7C5CE6, #2CB89A)</code></div>
+    <div class="gradient-sample gradient-dark"><strong class="en">Core movement gradient</strong><strong class="ar">تدرج الحركة الأساسي</strong><code>linear-gradient(to right, #7C5CE6, #2CB89A)</code></div>
   </div>
 </section>
 
@@ -474,30 +534,30 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div>
       <p class="eyebrow en">03 / SURFACE LANGUAGE</p>
       <p class="eyebrow ar">٠٣ / لغة السطح</p>
-      <h2 class="en">One continuous surface.</h2>
-      <h2 class="ar">سطح واحد متصل.</h2>
+      <h2 class="en">A modern digital workshop.</h2>
+      <h2 class="ar">ورشة رقمية معاصرة.</h2>
     </div>
-    <p class="en">Aithneen does not default to floating cards. Light mode should feel like a genuine sheet of paper. Dark mode should feel like a blackboard. Content is composed directly on the surface.</p>
-    <p class="ar">لا تعتمد AITHNEEN على البطاقات العائمة بوصفها قاعدة. يجب أن يبدو الوضع الفاتح كورقة حقيقية، والوضع الداكن كسبورة. يُرتّب المحتوى مباشرة على السطح.</p>
+    <p class="en">The locked backgrounds are digital surfaces, not paper or blackboard imitations. Secondary surfaces appear only when they clarify structure, interaction, or comparison.</p>
+    <p class="ar">الخلفيات المعتمدة أسطح رقمية، وليست محاكاة للورق أو السبورة. تظهر الأسطح الثانوية فقط عندما توضّح البنية أو التفاعل أو المقارنة.</p>
   </div>
   <div class="surface-demo">
     <div class="surface-sheet paper-sheet">
-      <h3 class="en">Paper surface</h3><h3 class="ar">سطح الورق</h3>
-      <p class="en">Ink, annotations, underlines, and soft frames belong to the same sheet.</p>
-      <p class="ar">ينتمي الحبر والتعليقات والتسطير والإطارات الناعمة إلى الورقة نفسها.</p>
+      <h3 class="en">Primary digital surface</h3><h3 class="ar">السطح الرقمي الأساسي</h3>
+      <p class="en">Content breathes directly on the page, with accents used to reveal relationships and active states.</p>
+      <p class="ar">يتنفس المحتوى مباشرة على الصفحة، وتُستخدم الألوان المميزة لإظهار العلاقات والحالات النشطة.</p>
       <div class="mark-row"><span class="mark-underline en">Underline</span><span class="mark-underline ar">تسطير</span><span class="mark-box en">Soft frame</span><span class="mark-box ar">إطار ناعم</span><span class="mark-circle en">Circle</span><span class="mark-circle ar">دائرة</span></div>
     </div>
     <div class="surface-sheet board-sheet">
-      <h3 class="en">Blackboard surface</h3><h3 class="ar">سطح السبورة</h3>
-      <p class="en">Chalk marks highlight meaning without creating a stack of separate surfaces.</p>
-      <p class="ar">تبرز علامات الطباشير المعنى دون صناعة طبقات منفصلة من الأسطح.</p>
+      <h3 class="en">Purposeful secondary surface</h3><h3 class="ar">سطح ثانوي هادف</h3>
+      <p class="en">Frames are reserved for real interface objects, diagrams, controls, and focused moments.</p>
+      <p class="ar">تُحجز الإطارات لعناصر الواجهة الحقيقية والمخططات والأدوات واللحظات المركزة.</p>
       <div class="mark-row"><span class="mark-underline en">Underline</span><span class="mark-underline ar">تسطير</span><span class="mark-heavy en">Conclusion</span><span class="mark-heavy ar">خلاصة</span></div>
     </div>
   </div>
   <div class="annotation annotation-violet">
     <strong class="en">Locked rule:</strong><strong class="ar">القاعدة المعتمدة:</strong>
-    <span class="en"> borders, boxes, circles, brackets, and underlines are annotation tools. They are not default containers.</span>
-    <span class="ar"> الحدود والصناديق والدوائر والأقواس والتسطير أدوات للتعليق والإبراز، وليست حاويات افتراضية.</span>
+    <span class="en"> avoid automatic card grids, excessive borders, glass panels, and decorative surfaces without a functional reason.</span>
+    <span class="ar"> تجنّب شبكات البطاقات التلقائية والحدود الزائدة والألواح الزجاجية والأسطح الزخرفية بلا سبب وظيفي.</span>
   </div>
 </section>
 
@@ -506,30 +566,29 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <div>
       <p class="eyebrow en">04 / TYPOGRAPHY</p>
       <p class="eyebrow ar">٠٤ / الخطوط</p>
-      <h2 class="en">Arabic leads.</h2>
-      <h2 class="ar">العربية تقود.</h2>
+      <h2 class="en">One family. Three coordinated forms.</h2>
+      <h2 class="ar">عائلة واحدة. ثلاثة أشكال منسجمة.</h2>
     </div>
-    <p class="en">Arabic is foundational, not ornamental. English follows Arabic. Body type stays readable; headings carry more personality; technical labels remain precise.</p>
-    <p class="ar">العربية أساس وليست زينة. وتتبعها الإنجليزية. يبقى خط النص واضحًا، وتحمل العناوين شخصية أقوى، وتظل التسميات التقنية دقيقة.</p>
+    <p class="en">Thmanyah gives Arabic and English one coherent voice. Display carries major moments, Text supports long reading, and Sans handles compact interface language.</p>
+    <p class="ar">يمنح خط ثمانية العربية والإنجليزية صوتًا واحدًا متماسكًا. يحمل خط العرض اللحظات الكبرى، ويدعم خط النص القراءة الطويلة، ويتولى الخط غير المزخرف لغة الواجهة المختصرة.</p>
   </div>
   <div class="annotation annotation-teal">
     <strong class="en">Typography lock:</strong><strong class="ar">الخطوط المعتمدة:</strong>
-    <span class="en"> Arabic: Amiri body and Amoshref Thulth headings in both themes. English: EB Garamond body and section headings, with expressive display lettering reserved for the hero.</span>
-    <span class="ar"> العربية: أميري للنص، وأمشرف ثلث للعناوين في الوضعين. الإنجليزية: إي بي غاراموند للنص وعناوين الأقسام، مع حصر الخط التعبيري في عنوان الواجهة الرئيسي.</span>
+    <span class="en"> Use Thmanyah Serif Display for major headings, Thmanyah Serif Text for reading, and Thmanyah Sans for navigation, labels, buttons, and metadata.</span>
+    <span class="ar"> استخدم ثمانية سيرف للعرض في العناوين الكبرى، وثمانية سيرف للنص في القراءة، وثمانية سانس للتنقل والتسميات والأزرار والبيانات الوصفية.</span>
   </div>
   <div class="typography-grid">
-    <div class="type-sample"><span class="type-role en">ARABIC BODY / AMIRI</span><span class="type-role ar">النص العربي / أميري</span><div class="type-display body-ar">الفكرة المختلفة تحتاج إلى يد تعرف كيف تبني.</div></div>
-    <div class="type-sample"><span class="type-role en">ARABIC LIGHT HEADING / AMOSHREF THULTH</span><span class="type-role ar">عنوان عربي فاتح / أمشرف ثلث</span><div class="type-display heading-ar-light">ابتكار نافع</div></div>
-    <div class="type-sample"><span class="type-role en">ARABIC DARK HEADING / AMOSHREF THULTH</span><span class="type-role ar">عنوان عربي داكن / أمشرف ثلث</span><div class="type-display heading-ar-dark">الحرفة والعناية</div></div>
-    <div class="type-sample"><span class="type-role en">ENGLISH BODY / EB GARAMOND</span><span class="type-role ar">النص الإنجليزي / إي بي غاراموند</span><div class="type-display body-en">Useful invention begins with patient observation.</div></div>
-    <div class="type-sample"><span class="type-role en">ENGLISH LIGHT HEADING / BILBO SWASH CAPS</span><span class="type-role ar">العنوان الإنجليزي الفاتح / بيلبو سواش كابس</span><div class="type-display heading-en-light">Useful Invention</div></div>
-    <div class="type-sample"><span class="type-role en">ENGLISH DARK HEADING / KALAM</span><span class="type-role ar">العنوان الإنجليزي الداكن / كلام</span><div class="type-display heading-en-dark">Work in Progress</div></div>
-    <div class="type-sample"><span class="type-role en">TECHNICAL / IBM PLEX MONO</span><span class="type-role ar">تقني / آي بي إم بلكس مونو</span><div class="type-display mono">SYSTEM: useful-invention / STATUS: evolving</div></div>
+    <div class="type-sample"><span class="type-role en">SERIF DISPLAY / MAJOR ARABIC</span><span class="type-role ar">سيرف العرض / عنوان عربي كبير</span><div class="type-display heading-ar-light">ابتكار نافع</div></div>
+    <div class="type-sample"><span class="type-role en">SERIF DISPLAY / MAJOR ENGLISH</span><span class="type-role ar">سيرف العرض / عنوان إنجليزي كبير</span><div class="type-display heading-en-light">Useful Invention</div></div>
+    <div class="type-sample"><span class="type-role en">SERIF TEXT / ARABIC READING</span><span class="type-role ar">سيرف النص / قراءة عربية</span><div class="type-display body-ar">الفكرة المختلفة تحتاج إلى يد تعرف كيف تبني.</div></div>
+    <div class="type-sample"><span class="type-role en">SERIF TEXT / ENGLISH READING</span><span class="type-role ar">سيرف النص / قراءة إنجليزية</span><div class="type-display body-en">Useful invention begins with patient observation.</div></div>
+    <div class="type-sample"><span class="type-role en">THMANYAH SANS / INTERFACE</span><span class="type-role ar">ثمانية سانس / الواجهة</span><div class="type-display ui-sample">AITHNEEN / Research / Systems / Build</div></div>
+    <div class="type-sample"><span class="type-role en">SYSTEM MONOSPACE / CODE ONLY</span><span class="type-role ar">خط النظام الأحادي / للكود فقط</span><div class="type-display mono">SYSTEM: useful-invention / STATUS: evolving</div></div>
   </div>
   <div class="annotation">
     <strong class="en">Font note:</strong><strong class="ar">ملاحظة عن الخط:</strong>
-    <span class="en"> Amoshref Thulth is loaded directly from the local font file included beside this identity book. Katibeh and Aref Ruqaa remain approved fallbacks if the font asset is moved or unavailable.</span>
-    <span class="ar"> يُحمّل خط أمشرف ثلث مباشرة من ملف الخط المحلي المرفق بجانب كتاب الهوية. وتبقى كاتبة وأريف رقعة بدائل معتمدة إذا نُقل ملف الخط أو تعذر تحميله.</span>
+    <span class="en"> The Thmanyah WOFF2 files are self-hosted and used across both languages and themes. System monospace is the only exception, reserved for genuine code-like content.</span>
+    <span class="ar"> تُستضاف ملفات ثمانية بصيغة WOFF2 محليًا وتُستخدم في اللغتين والوضعين. الاستثناء الوحيد هو خط النظام الأحادي المخصص للمحتوى البرمجي الحقيقي.</span>
   </div>
 </section>
 
@@ -632,8 +691,8 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     </div>
   <div class="annotation annotation-teal">
     <strong class="en">Usage colors:</strong><strong class="ar">ألوان الاستخدام:</strong>
-    <span class="en"> default logo on paper #47382D · logo on blackboard #E6E2D8 · light accent option #149C82 · dark accent option #7C5CE6.</span>
-    <span class="ar"> الشعار الأساسي على الورق #47382D · الشعار على السبورة #E6E2D8 · خيار اللون الفاتح #149C82 · خيار اللون الداكن #7C5CE6.</span>
+    <span class="en"> Use the compact signature as the working mark and favicon. Reserve the full alif signature for ceremonial, wide-space moments. Approved colors are primary text, teal, and violet.</span>
+    <span class="ar"> استخدم التوقيع المختصر بوصفه العلامة العاملة وأيقونة المتصفح. واحجز التوقيع الكامل بالألف للحظات الواسعة والاحتفالية. الألوان المعتمدة هي لون النص الأساسي والأخضر المزرق والبنفسجي.</span>
   </div>
 </section>
 
@@ -956,18 +1015,18 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
     <p class="ar">أصبح الأساس متماسكًا. يجب أن توسّع القرارات المتبقية النظام بدل أن تعيد فتح جوهره.</p>
   </div>
   <div class="open-grid">
-    <div class="open-item"><h3 class="en">Pattern language</h3><h3 class="ar">لغة الأنماط</h3><p class="en">Paper grain, blackboard texture, diagrams, and background marks.</p><p class="ar">نسيج الورق والسبورة والرسومات والعلامات الخلفية.</p></div>
-    <div class="open-item"><h3 class="en">Illustration style</h3><h3 class="ar">أسلوب الرسوم</h3><p class="en">Rules for portraits, diagrams, sketches, and project illustrations.</p><p class="ar">قواعد الصور الشخصية والمخططات والرسوم الأولية ورسوم المشروعات.</p></div>
-    <div class="open-item"><h3 class="en">Motion</h3><h3 class="ar">الحركة</h3><p class="en">Subtle transitions, drawing effects, and interaction restraint.</p><p class="ar">انتقالات خفيفة وتأثيرات الرسم وضبط التفاعل.</p></div>
-    <div class="open-item"><h3 class="en">Spacing and tokens</h3><h3 class="ar">المسافات والرموز التصميمية</h3><p class="en">A reusable implementation system for Astro and future products.</p><p class="ar">نظام تنفيذي قابل لإعادة الاستخدام في أسترو والمنتجات المستقبلية.</p></div>
+    <div class="open-item"><h3 class="en">Motion language</h3><h3 class="ar">لغة الحركة</h3><p class="en">Scroll assembly, progressive reveals, relationship paths, and useful transitions.</p><p class="ar">تجميع أثناء التمرير، وكشف تدريجي، ومسارات للعلاقات، وانتقالات نافعة.</p></div>
+    <div class="open-item"><h3 class="en">Systems map</h3><h3 class="ar">خريطة الأنظمة</h3><p class="en">An interactive component connecting research, architecture, and product output.</p><p class="ar">مكوّن تفاعلي يربط البحث والبنية ومخرجات المنتج.</p></div>
+    <div class="open-item"><h3 class="en">Project storytelling</h3><h3 class="ar">سرد المشروعات</h3><p class="en">Case studies that demonstrate the work before explaining it.</p><p class="ar">دراسات حالة تعرض العمل قبل أن تشرحه.</p></div>
+    <div class="open-item"><h3 class="en">Reusable implementation</h3><h3 class="ar">تنفيذ قابل لإعادة الاستخدام</h3><p class="en">Astro tokens, Tailwind mapping, accessibility testing, and responsive interaction rules.</p><p class="ar">رموز أسترو، وربط تايلويند، واختبارات الوصول، وقواعد التفاعل المتجاوب.</p></div>
   </div>
 </section>
 
 <footer class="footer">
-  <span class="en">AITHNEEN VISUAL IDENTITY BOOK / SINGLE-SURFACE SYSTEM</span>
-  <span class="ar">كتاب الهوية البصرية لـ AITHNEEN / نظام السطح الواحد</span>
-  <span class="en">Arabic leads. English follows.</span>
-  <span class="ar">العربية تقود، والإنجليزية تتبع.</span>
+  <span class="en">AITHNEEN VISUAL IDENTITY BOOK / DIGITAL WORKSHOP / V5</span>
+  <span class="ar">كتاب الهوية البصرية لـ AITHNEEN / ورشة رقمية / النسخة الخامسة</span>
+  <span class="en">Study deeply. Build carefully. Invent usefully.</span>
+  <span class="ar">ادرس بعمق. ابنِ بعناية. ابتكر ما ينفع.</span>
 </footer>
 </main>
 
