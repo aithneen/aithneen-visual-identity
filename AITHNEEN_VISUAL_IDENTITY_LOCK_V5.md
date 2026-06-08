@@ -801,15 +801,54 @@ typographic treatment.
 
 ## Hosting
 
-Self-host the Thmanyah `.woff2` files inside the website.
+The AITHNEEN visual-identity Cloudflare Pages project is the central font host for
+all AITHNEEN projects.
 
-Recommended approach:
+Load the complete font system and its locked typography classes with:
 
-- store files in the static assets directory
-- define them with `@font-face`
-- preload only the most important weights
-- load uncommon weights only when needed
-- serve the fonts from the same Cloudflare Pages domain as the site
+```html
+<link
+  rel="stylesheet"
+  href="https://aithneen-visual-identity.pages.dev/fonts/aithneen-thmanyah.css"
+>
+```
+
+The hosted stylesheet provides:
+
+- all three Thmanyah families
+- all five weights in every family
+- the five automatic size classes
+- intentional overrides for extended letters and emphasis
+- shared font-family and size custom properties
+
+Example:
+
+```html
+<p class="aithneen-type-body">Long readable copy.</p>
+<h2 class="aithneen-type-heading">Section heading</h2>
+<h1 class="aithneen-type-hero">Major extended statement</h1>
+<h3 class="aithneen-type-lead aithneen-type-extended">Intentional extended heading</h3>
+```
+
+Available intentional modifiers:
+
+| Class | Effect |
+|---|---|
+| `.aithneen-type-extended` | enables OpenType Stylistic Alternates `"salt"` |
+| `.aithneen-type-compact` | disables extended letters |
+| `.aithneen-type-strong` | overrides weight to Bold `700` |
+| `.aithneen-type-heavy` | overrides weight to Black `900` |
+| `.aithneen-type-soft` | overrides weight to Light `300` |
+| `.aithneen-type-code` | uses browser-system monospace |
+
+Use no more than one intentional modifier on an element under ordinary conditions.
+Extended letters should be used on short statements from `20px` upward, not on
+long paragraphs.
+
+Cloudflare Pages must serve `/fonts/*` with cross-origin access enabled so other
+AITHNEEN projects can request the CSS and WOFF2 files. Font binaries use long-lived
+immutable caching. The shared CSS file uses a shorter cache because its rules may
+evolve.
 
 ---
 

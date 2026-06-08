@@ -9,6 +9,7 @@
 <link rel="preload" href="./fonts/thmanyahserifdisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="./fonts/thmanyahseriftext-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="./fonts/thmanyahsans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./fonts/aithneen-thmanyah.css">
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 <style>
 :root {
@@ -241,21 +242,6 @@ html[data-lang="ar"] .footer { font-family:var(--body-ar); font-size:.9rem; }
 }
 </style>
 <style>
-@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Light.woff2") format("woff2");font-weight:300;font-display:swap}
-@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"Thmanyah Sans";src:url("./fonts/thmanyahsans-Black.woff2") format("woff2");font-weight:900;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Light.woff2") format("woff2");font-weight:300;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Text";src:url("./fonts/thmanyahseriftext-Black.woff2") format("woff2");font-weight:900;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Light.woff2") format("woff2");font-weight:300;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Medium.woff2") format("woff2");font-weight:500;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
-@font-face{font-family:"Thmanyah Serif Display";src:url("./fonts/thmanyahserifdisplay-Black.woff2") format("woff2");font-weight:900;font-display:swap}
 :root{
   --bg-light:#F1F4F8;--primary-light:#1E2833;--secondary-light:#5F6B78;
   --bg-dark:#101319;--primary-dark:#E8EDF2;--secondary-dark:#A7B3BE;
@@ -280,7 +266,7 @@ body::before{opacity:1;background-image:radial-gradient(circle at 8% 8%,color-mi
 button{background:color-mix(in srgb,var(--surface) 84%,transparent);border-color:var(--line);font-size:.78rem;font-weight:500}
 button:hover,button:focus-visible{background:color-mix(in srgb,var(--teal) 12%,var(--surface));transform:translateY(-1px)}
 h1,h2,h3,html[data-lang="ar"] h1,html[data-lang="ar"] h2,html[data-lang="ar"] h3{font-family:var(--display);letter-spacing:0}
-h1{font-size:var(--type-hero-size);font-weight:900;line-height:.96}
+h1{font-size:var(--type-hero-size);font-weight:900;line-height:.96;font-feature-settings:"salt" 1}
 h2{font-size:clamp(2rem,4vw,3.4rem);font-weight:700;line-height:1}
 h3{font-size:clamp(1.25rem,2vw,1.9375rem);font-weight:500;line-height:1.2}
 html[data-lang="ar"] h1,html[data-lang="ar"] h2,html[data-lang="ar"] h3{line-height:1.3}
@@ -317,7 +303,7 @@ code{font-family:var(--mono)}
 .type-auto-body{font:400 var(--type-body-size)/1.7 var(--body)}
 .type-auto-lead{font:500 var(--type-lead-size)/1.4 var(--display)}
 .type-auto-heading{font:700 var(--type-heading-size)/1.15 var(--display)}
-.type-auto-hero{font:900 clamp(3.5rem,7vw,5.5rem)/1.05 var(--display)}
+.type-auto-hero{font:900 clamp(3.5rem,7vw,5.5rem)/1.05 var(--display);font-feature-settings:"salt" 1}
 .type-light-exception{font:300 var(--type-heading-size)/1.2 var(--display)}
 .type-display.mono{font-family:var(--mono)!important}
 .logo-figure{border-color:var(--line-soft)}.logo-figure.light-preview .logo-stage{background:var(--bg-light)}.logo-figure.dark-preview .logo-stage{background:var(--bg-dark)}
@@ -603,8 +589,8 @@ code{font-family:var(--mono)}
   </div>
   <div class="annotation">
     <strong class="en">Font note:</strong><strong class="ar">ملاحظة عن الخط:</strong>
-    <span class="en"> Light 300 remains available only as a deliberate large-text exception. It is never selected automatically for small text. System monospace remains reserved for genuine code-like content.</span>
-    <span class="ar"> يبقى الوزن الخفيف ٣٠٠ استثناءً مقصودًا للنصوص الكبيرة فقط، ولا يختاره النظام تلقائيًا للنصوص الصغيرة. ويبقى خط النظام الأحادي مخصصًا للمحتوى البرمجي الحقيقي.</span>
+    <span class="en"> Load the complete shared system from <code>https://aithneen-visual-identity.pages.dev/fonts/aithneen-thmanyah.css</code>. Extended letters activate automatically at 56px+, or intentionally with <code>.aithneen-type-extended</code>.</span>
+    <span class="ar"> حمّل النظام المشترك كاملًا من <code>https://aithneen-visual-identity.pages.dev/fonts/aithneen-thmanyah.css</code>. تتفعّل الحروف المرسلة تلقائيًا من ٥٦ بكسل، أو بوعي باستخدام <code>.aithneen-type-extended</code>.</span>
   </div>
 </section>
 
