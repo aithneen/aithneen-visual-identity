@@ -1,0 +1,184 @@
+{
+  "version": "AITHNEEN Logo Asset Pack V5",
+  "colors": {
+    "violet": "#7C5CE6",
+    "teal": "#2CB89A",
+    "light_text": "#1E2833",
+    "dark_text": "#E8EDF2"
+  },
+  "surfaces": {
+    "transparent": null,
+    "light_bg": "#F1F4F8",
+    "dark_bg": "#101319"
+  },
+  "assets": [
+    {
+      "form": "compact_without_alif",
+      "color": "violet",
+      "surface": "transparent",
+      "svg": "aithneen_logo_compact_without_alif_violet_transparent.svg",
+      "png": "aithneen_logo_compact_without_alif_violet_transparent.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "violet",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_compact_without_alif_violet_light_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_violet_light_bg.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "violet",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_compact_without_alif_violet_dark_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_violet_dark_bg.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "teal",
+      "surface": "transparent",
+      "svg": "aithneen_logo_compact_without_alif_teal_transparent.svg",
+      "png": "aithneen_logo_compact_without_alif_teal_transparent.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "teal",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_compact_without_alif_teal_light_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_teal_light_bg.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "teal",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_compact_without_alif_teal_dark_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_teal_dark_bg.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "light_text",
+      "surface": "transparent",
+      "svg": "aithneen_logo_compact_without_alif_light_text_transparent.svg",
+      "png": "aithneen_logo_compact_without_alif_light_text_transparent.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "light_text",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_compact_without_alif_light_text_light_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_light_text_light_bg.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "light_text",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_compact_without_alif_light_text_dark_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_light_text_dark_bg.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "dark_text",
+      "surface": "transparent",
+      "svg": "aithneen_logo_compact_without_alif_dark_text_transparent.svg",
+      "png": "aithneen_logo_compact_without_alif_dark_text_transparent.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "dark_text",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_compact_without_alif_dark_text_light_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_dark_text_light_bg.png"
+    },
+    {
+      "form": "compact_without_alif",
+      "color": "dark_text",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_compact_without_alif_dark_text_dark_bg.svg",
+      "png": "aithneen_logo_compact_without_alif_dark_text_dark_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "violet",
+      "surface": "transparent",
+      "svg": "aithneen_logo_full_with_alif_violet_transparent.svg",
+      "png": "aithneen_logo_full_with_alif_violet_transparent.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "violet",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_full_with_alif_violet_light_bg.svg",
+      "png": "aithneen_logo_full_with_alif_violet_light_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "violet",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_full_with_alif_violet_dark_bg.svg",
+      "png": "aithneen_logo_full_with_alif_violet_dark_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "teal",
+      "surface": "transparent",
+      "svg": "aithneen_logo_full_with_alif_teal_transparent.svg",
+      "png": "aithneen_logo_full_with_alif_teal_transparent.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "teal",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_full_with_alif_teal_light_bg.svg",
+      "png": "aithneen_logo_full_with_alif_teal_light_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "teal",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_full_with_alif_teal_dark_bg.svg",
+      "png": "aithneen_logo_full_with_alif_teal_dark_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "light_text",
+      "surface": "transparent",
+      "svg": "aithneen_logo_full_with_alif_light_text_transparent.svg",
+      "png": "aithneen_logo_full_with_alif_light_text_transparent.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "light_text",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_full_with_alif_light_text_light_bg.svg",
+      "png": "aithneen_logo_full_with_alif_light_text_light_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "light_text",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_full_with_alif_light_text_dark_bg.svg",
+      "png": "aithneen_logo_full_with_alif_light_text_dark_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "dark_text",
+      "surface": "transparent",
+      "svg": "aithneen_logo_full_with_alif_dark_text_transparent.svg",
+      "png": "aithneen_logo_full_with_alif_dark_text_transparent.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "dark_text",
+      "surface": "light_bg",
+      "svg": "aithneen_logo_full_with_alif_dark_text_light_bg.svg",
+      "png": "aithneen_logo_full_with_alif_dark_text_light_bg.png"
+    },
+    {
+      "form": "full_with_alif",
+      "color": "dark_text",
+      "surface": "dark_bg",
+      "svg": "aithneen_logo_full_with_alif_dark_text_dark_bg.svg",
+      "png": "aithneen_logo_full_with_alif_dark_text_dark_bg.png"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+/*
+ * AITHNEEN Thmanyah Typography System
+ * Usage:
+ * <link rel="stylesheet"
+ *       href="https://aithneen-visual-identity.pages.dev/fonts/aithneen-thmanyah.css">
+ *
+ * Choose one size class. It supplies size, family, weight, and line-height.
+ * Add at most one intentional modifier when the default needs to be overridden.
+ */
+
+@font-face{font-family:"Thmanyah Sans";src:url("./thmanyahsans-Light.woff2") format("woff2");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("./thmanyahsans-Regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("./thmanyahsans-Medium.woff2") format("woff2");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("./thmanyahsans-Bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("./thmanyahsans-Black.woff2") format("woff2");font-style:normal;font-weight:900;font-display:swap}
+
+@font-face{font-family:"Thmanyah Serif Text";src:url("./thmanyahseriftext-Light.woff2") format("woff2");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./thmanyahseriftext-Regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./thmanyahseriftext-Medium.woff2") format("woff2");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./thmanyahseriftext-Bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Text";src:url("./thmanyahseriftext-Black.woff2") format("woff2");font-style:normal;font-weight:900;font-display:swap}
+
+@font-face{font-family:"Thmanyah Serif Display";src:url("./thmanyahserifdisplay-Light.woff2") format("woff2");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./thmanyahserifdisplay-Regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./thmanyahserifdisplay-Medium.woff2") format("woff2");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./thmanyahserifdisplay-Bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Serif Display";src:url("./thmanyahserifdisplay-Black.woff2") format("woff2");font-style:normal;font-weight:900;font-display:swap}
+
+:root{
+  --aithneen-font-ui:"Thmanyah Sans",system-ui,sans-serif;
+  --aithneen-font-body:"Thmanyah Serif Text",Georgia,serif;
+  --aithneen-font-display:"Thmanyah Serif Display",Georgia,serif;
+  --aithneen-font-code:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+
+  --aithneen-type-xs-size:.75rem;
+  --aithneen-type-body-size:1.125rem;
+  --aithneen-type-lead-size:1.5rem;
+  --aithneen-type-heading-size:2.5rem;
+  --aithneen-type-hero-size:clamp(3.5rem,9vw,7.5rem);
+}
+
+/* Locked automatic scale: select size only. */
+.aithneen-type-xs{font:500 var(--aithneen-type-xs-size)/1.5 var(--aithneen-font-ui)}
+.aithneen-type-body{font:400 var(--aithneen-type-body-size)/1.7 var(--aithneen-font-body)}
+.aithneen-type-lead{font:500 var(--aithneen-type-lead-size)/1.4 var(--aithneen-font-display)}
+.aithneen-type-heading{font:700 var(--aithneen-type-heading-size)/1.15 var(--aithneen-font-display)}
+.aithneen-type-hero{font:900 var(--aithneen-type-hero-size)/1 var(--aithneen-font-display);font-feature-settings:"salt" 1}
+
+/* Intentional overrides: use sparingly and normally only one per element. */
+.aithneen-type-extended{font-feature-settings:"salt" 1}
+.aithneen-type-compact{font-feature-settings:"salt" 0}
+.aithneen-type-strong{font-weight:700}
+.aithneen-type-heavy{font-weight:900}
+.aithneen-type-soft{font-weight:300}
+.aithneen-type-code{font-family:var(--aithneen-font-code)}
+
+:where([lang="ar"],[dir="rtl"]) :is(
+  .aithneen-type-xs,
+  .aithneen-type-body,
+  .aithneen-type-lead,
+  .aithneen-type-heading,
+  .aithneen-type-hero
+){
+  letter-spacing:0;
+}

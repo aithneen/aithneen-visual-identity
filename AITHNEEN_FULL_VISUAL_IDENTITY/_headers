@@ -1,0 +1,31 @@
+/assets/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Cross-Origin-Resource-Policy: cross-origin
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/aithneen-thmanyah.css
+  ! Cache-Control
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/assets/logos/manifest.json
+  ! Cache-Control
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/assets/portraits/portrait_collection_manifest.json
+  ! Cache-Control
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/assets/catalog.json
+  ! Cache-Control
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/fonts/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Cross-Origin-Resource-Policy: cross-origin
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/aithneen-thmanyah.css
+  ! Cache-Control
+  Cache-Control: public, max-age=3600, must-revalidate

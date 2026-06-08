@@ -1,0 +1,21 @@
+{
+  "name": "AITHNEEN Visual Identity Library",
+  "version": "V5",
+  "canonical_origin": "https://aithneen-visual-identity.pages.dev",
+  "endpoints": {
+    "typography_css": "/assets/fonts/aithneen-thmanyah.css",
+    "typography_css_legacy": "/fonts/aithneen-thmanyah.css",
+    "logo_manifest": "/assets/logos/manifest.json",
+    "portrait_manifest": "/assets/portraits/portrait_collection_manifest.json",
+    "identity_lock": "/docs/AITHNEEN_VISUAL_IDENTITY_LOCK_V5.md"
+  },
+  "directories": {
+    "logo_svg": "/assets/logos/svg/",
+    "logo_png": "/assets/logos/png/",
+    "icons": "/assets/logos/icons/",
+    "logo_previews": "/assets/logos/previews/",
+    "portraits": "/assets/portraits/",
+    "fonts": "/assets/fonts/",
+    "documents": "/docs/"
+  }
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AITHNEEN Visual Identity Library</title>
+  <meta name="description" content="The complete AITHNEEN visual identity library, asset catalog, and hosted design-system source.">
+  <link rel="icon" href="./assets/logos/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="./assets/logos/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./assets/fonts/aithneen-thmanyah.css">
+  <link rel="stylesheet" href="./assets/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AITHNEEN home">
+      <img src="./assets/logos/svg/aithneen_logo_compact_without_alif_teal_transparent.svg" alt="">
+      <span>AITHNEEN</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#system">System</a>
+      <a href="#logos">Logos</a>
+      <a href="#portraits">Portraits</a>
+      <a href="#endpoints">Endpoints</a>
+    </nav>
+    <button id="theme-toggle" type="button">Dark mode</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div>
+        <p class="kicker">VISUAL IDENTITY LIBRARY / V5</p>
+        <h1 class="aithneen-type-hero">A complete identity, ready to use.</h1>
+        <p class="hero-copy">The canonical AITHNEEN identity showcase and asset source. Browse every approved choice, copy stable Cloudflare URLs, and reuse the shared typography system in any project.</p>
+        <div class="actions">
+          <a class="button primary" href="#logos">Browse assets</a>
+          <a class="button" href="./docs/AITHNEEN_VISUAL_IDENTITY_LOCK_V5.md">Read identity lock</a>
+        </div>
+      </div>
+      <div class="hero-mark">
+        <img src="./assets/logos/svg/aithneen_logo_full_with_alif_teal_transparent.svg" alt="AITHNEEN full signature logo">
+        <span>Working mark / ceremonial mark / hosted source</span>
+      </div>
+    </section>
+
+    <section class="section-shell" id="system">
+      <div class="section-heading">
+        <p class="kicker">01 / LOCKED SYSTEM</p>
+        <h2 class="aithneen-type-heading">One source of truth.</h2>
+        <p>Color, typography, logo usage, and asset paths are collected here so every future AITHNEEN project begins from the same foundation.</p>
+      </div>
+      <div class="color-strip" aria-label="AITHNEEN color palette">
+        <article><span class="swatch-violet"></span><strong>Violet</strong><code>#7C5CE6</code></article>
+        <article><span class="swatch-teal"></span><strong>Teal</strong><code>#2CB89A</code></article>
+        <article><span class="swatch-bg-light"></span><strong>Light background</strong><code>#F1F4F8</code></article>
+        <article><span class="swatch-bg-dark"></span><strong>Dark background</strong><code>#101319</code></article>
+        <article><span class="swatch-text-light"></span><strong>Light text</strong><code>#1E2833</code></article>
+        <article><span class="swatch-text-dark"></span><strong>Dark text</strong><code>#E8EDF2</code></article>
+      </div>
+      <div class="type-scale">
+        <article><span>Below 16px / Sans Medium</span><p class="aithneen-type-xs">Compact interface metadata / بيانات واجهة مختصرة</p></article>
+        <article><span>16–19px / Serif Text Regular</span><p class="aithneen-type-body">Useful invention begins with careful reading. يبدأ الابتكار النافع بالقراءة المتأنية.</p></article>
+        <article><span>20–31px / Display Medium</span><p class="aithneen-type-lead">From research to a useful system.</p></article>
+        <article><span>32–55px / Display Bold</span><p class="aithneen-type-heading">Builder and inventor.</p></article>
+        <article><span>56px+ / Display Black + extended</span><p class="aithneen-type-hero">ابتكار نافع</p></article>
+      </div>
+    </section>
+
+    <section class="section-shell" id="logos">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="kicker">02 / LOGO LIBRARY</p>
+          <h2 class="aithneen-type-heading">Every approved logo variant.</h2>
+        </div>
+        <p>Use the compact signature as the default working mark. Reserve the full signature with alif for wide ceremonial placements.</p>
+      </div>
+      <div class="filters" aria-label="Logo filters">
+        <button class="filter active" data-logo-filter="all" type="button">All</button>
+        <button class="filter" data-logo-filter="compact_without_alif" type="button">Compact</button>
+        <button class="filter" data-logo-filter="full_with_alif" type="button">Full</button>
+      </div>
+      <div class="asset-grid logo-grid" id="logo-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-shell" id="portraits">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="kicker">03 / PORTRAIT ARCHIVE</p>
+          <h2 class="aithneen-type-heading">Portrait studies and production sources.</h2>
+        </div>
+        <p>The approved teal unfinished portrait remains the primary direction. The complete archive is retained here for future crops, experiments, and reference.</p>
+      </div>
+      <div class="asset-grid portrait-grid" id="portrait-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-shell" id="endpoints">
+      <div class="section-heading">
+        <p class="kicker">04 / HOSTED ASSET SOURCE</p>
+        <h2 class="aithneen-type-heading">Stable URLs for every project.</h2>
+        <p>Use these Cloudflare paths directly. Fonts and assets are served with cross-origin access enabled and long-lived binary caching.</p>
+      </div>
+      <div class="endpoint-list">
+        <article>
+          <strong>Shared typography CSS</strong>
+          <code id="font-endpoint">https://aithneen-visual-identity.pages.dev/assets/fonts/aithneen-thmanyah.css</code>
+          <button class="copy-button" data-copy-target="font-endpoint" type="button">Copy URL</button>
+        </article>
+        <article>
+          <strong>Logo manifest</strong>
+          <code id="logo-endpoint">https://aithneen-visual-identity.pages.dev/assets/logos/manifest.json</code>
+          <button class="copy-button" data-copy-target="logo-endpoint" type="button">Copy URL</button>
+        </article>
+        <article>
+          <strong>Portrait manifest</strong>
+          <code id="portrait-endpoint">https://aithneen-visual-identity.pages.dev/assets/portraits/portrait_collection_manifest.json</code>
+          <button class="copy-button" data-copy-target="portrait-endpoint" type="button">Copy URL</button>
+        </article>
+        <article>
+          <strong>Complete asset catalog</strong>
+          <code id="catalog-endpoint">https://aithneen-visual-identity.pages.dev/assets/catalog.json</code>
+          <button class="copy-button" data-copy-target="catalog-endpoint" type="button">Copy URL</button>
+        </article>
+      </div>
+      <pre><code>&lt;link rel="stylesheet"
+  href="https://aithneen-visual-identity.pages.dev/assets/fonts/aithneen-thmanyah.css"&gt;</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <span>AITHNEEN VISUAL IDENTITY LIBRARY / V5</span>
+    <a href="./docs/AITHNEEN_VISUAL_IDENTITY_LOCK_V5.md">Identity lock</a>
+  </footer>
+
+  <template id="asset-card-template">
+    <article class="asset-card">
+      <a class="asset-preview" target="_blank" rel="noopener"><img loading="lazy" alt=""></a>
+      <div class="asset-meta">
+        <strong></strong>
+        <span></span>
+        <div class="asset-actions">
+          <a class="download" download>Download</a>
+          <button class="copy-asset" type="button">Copy URL</button>
+        </div>
+      </div>
+    </article>
+  </template>
+  <script src="./assets/js/site.js" defer></script>
+</body>
+</html>
